@@ -56,9 +56,9 @@ except Exception as e:
 # 5. Informações do modelo
 print("5️⃣  Informações do modelo YOLOv8n:")
 print(f"   - Task: {model.task}")
-print(f"   - Model type: {model.model_type}")
 print(f"   - Model name: {model.model_name}")
 print(f"   - Número de parâmetros: {sum(p.numel() for p in model.model.parameters()):,}")
+print(f"   - Classes: {len(model.names)} classes disponíveis")
 
 print("\n" + "="*70)
 print("✅ VALIDAÇÃO CONCLUÍDA COM SUCESSO")
